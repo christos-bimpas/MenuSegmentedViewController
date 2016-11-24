@@ -30,3 +30,11 @@
       }
 
       }
+      
+#Install
+Podfile
+
+      use_frameworks!
+      target 'SegmentedExample' do
+           pod 'MenuSegmentedViewController', :git => ‘https://github.com/christos-bimpas/MenuSegmentedViewController.git'
+      end
