@@ -2,6 +2,18 @@
 
 #Example
 
+#AppDelegate
+
+      window = UIWindow(frame: UIScreen.main.bounds)
+      window?.makeKeyAndVisible()
+      let viewController = ViewController()
+      viewController.title = "Example"
+      let navViewController = UINavigationController(rootViewController: viewController)
+      navViewController.navigationBar.isTranslucent = false
+      window?.rootViewController = navViewController
+        
+#ViewController
+
       import MenuSegmentedViewController
 
       class ViewController: MenuSegmentedViewController {
