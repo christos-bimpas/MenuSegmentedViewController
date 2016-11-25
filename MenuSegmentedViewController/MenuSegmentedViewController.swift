@@ -12,15 +12,15 @@ import QuartzCore
 
 import SnapKit
 
-class NDSegmentedViewController: UIViewController, UIScrollViewDelegate {
+public class NDSegmentedViewController: UIViewController, UIScrollViewDelegate {
     
     //MARK: - Properties
-    var viewControllers: [UIViewController] = []
-    var titleViewHeight: Float = 34
-    var titleFont:  UIFont?
-    var titleColor: UIColor?
-    var underlineColor: UIColor?
-    var minAlpha: CGFloat = 0.2
+    public var viewControllers: [UIViewController] = []
+    public var titleViewHeight: Float = 34
+    public var titleFont:  UIFont?
+    public var titleColor: UIColor?
+    public var underlineColor: UIColor?
+    public var minAlpha: CGFloat = 0.2
     
     private var titleScrollView: UIScrollView!
     private var contentScrollView: UIScrollView!
