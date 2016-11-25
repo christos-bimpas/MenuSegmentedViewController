@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => 'https://github.com/christos-bimpas/MenuSegmentedViewController.git', :tag => s.version }
 
-  s.source_files  = 'MenuSegmentedViewController/MenuSegmentedViewController/*.swift'
+  s.source_files  = 'MenuSegmentedViewController/*.swift'
 
   s.dependency 'SnapKit', '~> 3.0'
 
