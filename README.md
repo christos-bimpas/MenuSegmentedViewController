@@ -17,7 +17,8 @@
       import MenuSegmentedViewController
 
       class ViewController: MenuSegmentedViewController {
-    
+            let minScale:CGFloat = 0.8
+            
             override init() {
             super.init()
             super.viewDidLoad()
@@ -42,8 +43,19 @@
             }
 
             override func contentDidScroll(withOffset offset: CGFloat) {
-                  
-            }
+                  let currentIndex = Int(floor(offset))
+                  let nextIndex = Int(ceil(offset))
+                  if viewControllers.indices.contains(currentIndex) {
+                        let currentViewController = viewControllers[currentIndex]
+                        let progress = fabs(CGFloat(nextIndex) - offset)
+                        currentViewController.view.transform = CGAffineTransform(scaleX: (1 - minScale) * progress + minScale, y: (1 - minScale) * progress + minScale)
+                  }
+                  if viewControllers.indices.contains(nextIndex) {
+                        let nextViewController = viewControllers[nextIndex]
+                        let progress = 1 - fabs(CGFloat(nextIndex) - offset)
+                        nextViewController.view.transform = CGAffineTransform(scaleX: (1 - minScale) * progress + minScale, y: (1 - minScale) * progress + minScale)
+                  }
+             }
 
       }
       
