@@ -33,7 +33,7 @@ public class NDSegmentedViewController: UIViewController, UIScrollViewDelegate {
     
     //MARK: -
     
-    init() {
+    public init() {
         super.init(nibName:nil, bundle:nil)
         self.view.backgroundColor = UIColor.white
         
@@ -160,7 +160,7 @@ public class NDSegmentedViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         fatalError("init(coder:) has not been implemented")
     }
@@ -188,7 +188,7 @@ public class NDSegmentedViewController: UIViewController, UIScrollViewDelegate {
     
     //MARK: - UIScrollViewDelegate
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offset = scrollView.contentOffset.x / scrollView.frame.size.width
         self.contentDidScroll(withOffset: offset)
         
@@ -228,7 +228,7 @@ public class NDSegmentedViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    func contentDidScroll(withOffset offset: CGFloat) {
+    public func contentDidScroll(withOffset offset: CGFloat) {
         
     }
     
