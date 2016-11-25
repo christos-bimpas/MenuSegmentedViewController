@@ -85,7 +85,7 @@ open class MenuSegmentedViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    func set(viewControllers controllers: [UIViewController]) {
+    public func set(viewControllers controllers: [UIViewController]) {
         viewControllers = controllers
         
         var previousButton: UIButton!
