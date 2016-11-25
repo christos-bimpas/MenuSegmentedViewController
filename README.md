@@ -17,7 +17,7 @@
       import MenuSegmentedViewController
 
       class ViewController: MenuSegmentedViewController {
-            let minScale:CGFloat = 0.8
+            let minScale: CGFloat = 0.8
             
             override init() {
             super.init()
