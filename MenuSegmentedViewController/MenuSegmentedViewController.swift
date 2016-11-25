@@ -228,7 +228,7 @@ open class MenuSegmentedViewController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    public func contentDidScroll(withOffset offset: CGFloat) {
+    open func contentDidScroll(withOffset offset: CGFloat) {
         
     }
     
