@@ -12,7 +12,7 @@ import QuartzCore
 
 import SnapKit
 
-public class NDSegmentedViewController: UIViewController, UIScrollViewDelegate {
+public class MenuSegmentedViewController: UIViewController, UIScrollViewDelegate {
     
     //MARK: - Properties
     public var viewControllers: [UIViewController] = []
